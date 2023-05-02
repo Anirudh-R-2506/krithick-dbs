@@ -19,7 +19,6 @@ function createWindow () {
 
 function openIndex(){
   mainWindow.loadFile('src/html/index.html');
-  mainWindow.webContents.openDevTools();
 }
 
 ipcMain.on('user:register', (event, data) => {
@@ -32,7 +31,6 @@ ipcMain.on('user:register', (event, data) => {
       console.log(`stderr: ${stderr}`);
       return;
     }
-    console.log(`stdout: ${stdout}`);
   });
 });
 
@@ -46,7 +44,6 @@ ipcMain.on('user:donate', (event, data) => {
       console.log(`stderr: ${stderr}`);
       return;
     }
-    console.log(`stdout: ${stdout}`);
   });
 });
 
@@ -60,7 +57,6 @@ ipcMain.on('user:receive', (event, data) => {
       console.log(`stderr: ${stderr}`);
       return;
     }
-    console.log(`stdout: ${stdout}`);
   });
 });
 
@@ -74,7 +70,6 @@ ipcMain.on('user:inventory', (event, data) => {
       console.log(`stderr: ${stderr}`);
       return;
     }
-    console.log(`stdout: ${stdout}`);
   });
 });
 
@@ -88,7 +83,6 @@ ipcMain.on('user:history', (event, data) => {
       console.log(`stderr: ${stderr}`);
       return;
     }
-    console.log(`stdout: ${stdout}`);
   });
 });
 
@@ -102,7 +96,6 @@ ipcMain.on('user:feedback', (event, data) => {
       console.log(`stderr: ${stderr}`);
       return;
     }
-    console.log(`stdout: ${stdout}`);
   });
 });
 
