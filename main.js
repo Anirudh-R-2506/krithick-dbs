@@ -19,6 +19,7 @@ function createWindow () {
 
 function openIndex(){
   mainWindow.loadFile('src/html/index.html');
+  console.log('path: ' + path.resolve(__dirname, 'register.sql'));
 }
 
 ipcMain.on('user:register', (event, data) => {
